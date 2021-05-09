@@ -1,10 +1,10 @@
 body {
     text-align: center;
     background-repeat: no-repeat;
-    background: linear-gradient(#60ebeb 0%, #27ae60 100%);
 }
 
 #welcome {
+    background-color: yellow;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -30,6 +30,7 @@ h1 {
 #bio {
     padding: 50px;
     text-align: center;
+    background-color: aqua;
 }
 
 .line {
@@ -47,11 +48,11 @@ h1 {
 }
 
 p {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 25px auto;
     font-size: 18px;
     line-height: 1.3;
-    color: crimson;
+    color: black;
     font-weight: 600;
 }
 
@@ -61,31 +62,30 @@ h2 {
 
 .menu {
     list-style: none;
-    margin-top: 0px;
-    top: 0px;
-    position: fixed;
+    top: 10px;
+    right: 30px;
+    position: absolute;
     font-family: "cursive";
     font-size: 20px;
     z-index: 10;
     cursor: pointer;
-    background-color: white;
-    width: 100%;
 }
 
 .links {
-    display: inline;
-    padding-left: 33px;
-    padding-right: 25px;
+    float: left;
+    padding-bottom: 9px;
+    padding-left: 5px;
+    padding-top: 9px;
+    padding-right: 5px;
     color: deeppink;
 }
 
 .links:hover {
-    background-color: yellow;
-    text-decoration: underline;
-    font-size: 40px;
+    background-color: #EEFF41;
 }
 
 .profile {
+    width: 700px;
     border-radius: 10%;
     margin-top: 80px;
 }
@@ -101,22 +101,51 @@ a {
 }
 
 a:hover {
-    color: deeppink;
+    color: fuchsia;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-img {
-    transform: transform(0.2);
-    width: 400px;
-    margin: 20px;
+.btn {
+    background-color: aqua;
+    color: red;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
 }
 
-img:hover {
+.btn:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#favapps {
+    background-color: chartreuse;
+}
+
+#works {
+    background-color: deeppink;
+    padding: 50px;
+}
+
+#inspiration {
+    background-color: coral;
+}
+
+#img2 {
+    width: 500px;
+    transition: transform (0.2);
+}
+
+#img2:hover {
     transform: scale(0.9);
 }
-.anchortag:hover{
-    color: chartreuse;
+
+#contact {
+    background-color:cornsilk;
 }
